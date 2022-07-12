@@ -19,12 +19,29 @@ public class Homework9 {
 
         System.out.println(Arrays.toString(ageOfPlayers));
         System.out.println(Arrays.toString(ageOfPlayers2));
-        System.out.println((double) averageAge / ageOfPlayers.length);
-        System.out.println((double) averageAge2 / ageOfPlayers.length);
+        System.out.println("Средний возраст первой команды: " + (double) averageAge / ageOfPlayers.length);
+        System.out.println("Средний возраст второй команды: " + (double) averageAge2 / ageOfPlayers.length);
+        System.out.println();
+        arrayCopy();
     }
     static void arrayCopy() {
-        int[] source = new int[4];
-        int[] target = new int[4];
+//        int[] source = new int[4];
+//        for (int i = 0; i < source.length; i++) {
+//            source[i] = i + 1;
+//        }
+        int[] source = {1, 2, 3, 4};
+        int[] target = {5, 6, 7, 8};
+        int[] array = new int[source.length + target.length];
+        array[0] = source[0];
+        array[1] = source[1];
+        array[2] = source[2];
+        array[3] = source[3];
+        array[4] = target[0];
+        array[5] = target[1];
+        array[6] = target[2];
+        array[7] = target[3];
+
+        System.out.println(Arrays.toString(array));
     }
 }
 
