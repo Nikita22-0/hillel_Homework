@@ -20,7 +20,6 @@ public class Homework10 {
 
     static void coincidences(int[] companyNumb, int[] playerNumb) {
         int a = 0;
-        int b = 0;
         System.out.print("Matched ");
         for (int i = 0; i < companyNumb.length; i++) {
             if (companyNumb[i] == playerNumb[i]){
