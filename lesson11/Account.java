@@ -31,7 +31,19 @@ public class Account {
 
     public void printAccountInfo() {
         this.age = (2020 - year);
-        System.out.println(this);
+        System.out.println(
+                "Account info: " + '\n' +
+                "name - " + getName() + '\n' +
+                "secondName - " + secondName + '\n' +
+                "day - " + getDay() +
+                ", mouth - " + getMouth() +
+                ", year - " + getYear() + '\n' +
+                "weight - " + weight +'\n' +
+                "pressure - " + pressure + '\n' +
+                "steps taken per day - " + steps_taken_per_day + '\n' +
+                "email - " + getEmail() + '\n' +
+                "phone number - " + getPhoneNumber() + '\n' +
+                "age - " + getAge());
     }
 
     public String getName() {
@@ -77,21 +89,5 @@ public class Account {
 
     public void setSteps_taken_per_day(int steps_taken_per_day) {
         this.steps_taken_per_day = steps_taken_per_day;
-    }
-
-    @Override
-    public String toString() {
-        return "Account info: " + '\n' +
-                "name - " + name + '\n' +
-                "secondName - " + secondName + '\n' +
-                "day - " + day +
-                ", mouth - " + mouth +
-                ", year - " + year + '\n' +
-                "weight - " + weight +'\n' +
-                "pressure - " + pressure + '\n' +
-                "steps taken per day - " + steps_taken_per_day + '\n' +
-                "email - " + email + '\n' +
-                "phone number - " + phoneNumber + '\n' +
-                "age - " + age ;
     }
 }
