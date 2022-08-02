@@ -15,7 +15,7 @@ public class Extradition {
         Scanner scanner = new Scanner(System.in);
         do {
             System.out.println("Какой напиток вы хотите выбрать?");
-            System.out.println("Напиши No если не хочешь напитка");
+            System.out.println("Напиши No если не хотите напитка");
             System.out.println(DrinksMachine.COFFEE.getTitle() + " - " + Drinks.COFFEE);
             System.out.println(DrinksMachine.TEA.getTitle() + " - " + Drinks.TEA);
             System.out.println(DrinksMachine.LEMONADE.getTitle() + " - " + Drinks.LEMONADE);
