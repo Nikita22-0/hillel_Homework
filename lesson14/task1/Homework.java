@@ -1,4 +1,4 @@
-package com.hillel.paschenko.lesson14;
+package com.hillel.paschenko.lesson14.task1;
 
 public class Homework {
 
